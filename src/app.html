@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
+<style>
+
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.c-catalog, .c-nav {
+  max-width: 776px;
+  margin: 0 auto;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bodoni-moda-regular {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: none;
+  font-weight: 400;
+  /* 600 */
+  font-style: normal;
+}
+
+.tilt-warp {
+  font-family: "Tilt Warp", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+
+.c-logo {
+}
+
+.c-logo__img {
+	width: 80px;
+}
+@media (min-width: 660px)	{
+	.c-logo {
+	}
+}
+
+.c-catalog {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 1rem;
+		gap: 1rem;
+}
+
+@media (min-width: 660px)	{
+	.c-catalog {
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 50px;
+		padding: 3rem;
+	}
+}
+
+@media (min-width: 830px)	{
+	.c-catalog {
+		padding: 0;
+	}
+}
+
+.c-listing {
+}
+
+.c-listing__image {
+	max-width: 100%;
+}
+
+.c-listing__text {
+	display: flex;
+}
+
+.c-listing__name {
+	font-size: 14px;
+	flex: 1;
+	line-height: 1;
+}
+
+.c-listing__price {
+	font-size: 18px;
+	line-height: 1;
+  width: 4em;
+  text-align: right;
+}
+
+.c-alpha-image {
+  width: 444px;
+}
+
+.c-product-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-product-detail__buy {
+  margin-top: auto;
+}
+
+.c-product-detail__name {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 400;
+  margin: 0;
+}
+
+.c-btn {
+  background-color: #5E1F0C;
+  color: #FFEDAC;
+
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  min-width: 160px;
+}
+
+.c-product-detail__price {
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.l-product {
+  display: flex;
+  max-width: 776px;
+  margin: 0 auto;
+}
+
+.l-product__left {
+  width: 444px;
+}
+
+.l-product__right {
+  width: 332px;
+  padding-left: 80px;
+}
+
+</style>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
