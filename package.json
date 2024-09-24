@@ -30,6 +30,5 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"woolnut": "link:"
 	}
 }
