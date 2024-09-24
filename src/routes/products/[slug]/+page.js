@@ -1,11 +1,12 @@
 import { error } from '@sveltejs/kit';
+import { PUBLIC_BACKEND_URL } from '$env/static/public';
 import Medusa from "@medusajs/medusa-js";
 
 const regionId = "reg_01J8JG4VNPHQZD7HQHBMXQNFWS";
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
-  const response = await fetch("http://localhost:9000/store/products")
+  const response = await fetch(PUBLIC_BACKEND_URL + "/store/products")
 
   if (response.ok) {
     const json = await response.json();
