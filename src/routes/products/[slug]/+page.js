@@ -5,7 +5,7 @@ import Medusa from "@medusajs/medusa-js";
 const regionId = "reg_01J8JG4VNPHQZD7HQHBMXQNFWS";
 
 /** @type {import('./$types').PageLoad} */
-export async function load({ params }) {
+export async function load({ fetch, params }) {
   const response = await fetch(PUBLIC_BACKEND_URL + "/store/products")
 
   if (response.ok) {
