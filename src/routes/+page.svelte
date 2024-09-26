@@ -1,6 +1,7 @@
 <script>
 	/** @type {import('./$types').PageData} */
 	export let data;
+  const products = data.products
 </script>
 
 
@@ -9,7 +10,7 @@
 </svelte:head>
 
 <div class="c-catalog">
-	{#each data.products as product}
+	{#each products as product}
     <a href="/products/{product.handle}">
       <div class="bodoni-moda-regular c-listing">
       <img class="c-listing__image" src="{product.variants[0].images[0].url}" alt="" />
