@@ -15,7 +15,10 @@
     <h1 class="c-product-detail__name">{data.title}</h1>
     <div class="c-product-detail__price">${@html data.variants[0].prices[0].amount / 100}</div>
     <div class="c-product-detail__buy">
-    <button class="c-btn tilt-warp">Buy Now</button>
+    <form action="/checkout" method="POST">
+      <input type="hidden" name="handle" value="{data.handle}" />
+        <input type="submit" class="c-btn tilt-warp" value="Buy Now" />
+    </form>
     </div>
   </div>
 </div>
